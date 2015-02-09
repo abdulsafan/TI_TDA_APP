@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:25
+-keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.javacodegeeks.android.bluetoothtest.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.javacodegeeks.android.bluetoothtest.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.javacodegeeks.android.bluetoothtest.RegisterActivity { <init>(...); }
+
