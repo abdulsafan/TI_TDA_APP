@@ -1,5 +1,8 @@
 package com.javacodegeeks.android.bluetoothtest;
 
+
+//testcomment
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
