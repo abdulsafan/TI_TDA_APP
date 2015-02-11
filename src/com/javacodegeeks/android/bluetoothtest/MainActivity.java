@@ -6,7 +6,9 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+
 import java.util.Set;
+
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.view.View;
@@ -34,6 +36,17 @@ public class MainActivity extends Activity {
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_main);
+      
+      // For Testing Purposes
+      Button button1 = (Button) findViewById(R.id.goToRegister);
+      button1.setOnClickListener(new Button.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				//Get Current Location and show on map
+				Intent intent = new Intent(view.getContext(), RegisterActivity.class);
+				startActivity(intent);
+			}
+		});
       
       // take an instance of BluetoothAdapter - Bluetooth radio
       myBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
